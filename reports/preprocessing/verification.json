@@ -1,0 +1,88 @@
+{
+  "checks": [
+    {
+      "details": {
+        "artifacts": 227,
+        "failed": []
+      },
+      "name": "artifact_checksums",
+      "passed": true
+    },
+    {
+      "details": {
+        "fit": 80,
+        "validation": 20
+      },
+      "name": "split_isolation",
+      "passed": true
+    },
+    {
+      "details": {
+        "rows": 20631
+      },
+      "name": "train_labels_independent",
+      "passed": true
+    },
+    {
+      "details": {
+        "rows": 13096
+      },
+      "name": "test_labels_independent",
+      "passed": true
+    },
+    {
+      "details": {
+        "fit_split": "train_fit",
+        "n_fit_engines": 80
+      },
+      "name": "scaler_fit_boundary",
+      "passed": true
+    },
+    {
+      "details": {
+        "windows": 27927
+      },
+      "name": "window_boundaries",
+      "passed": true
+    },
+    {
+      "details": {
+        "windows": 27927
+      },
+      "name": "window_targets_match_ending_cycle",
+      "passed": true
+    },
+    {
+      "details": {
+        "test": {
+          "X_shape": [
+            2,
+            30,
+            92
+          ],
+          "file": "engine_0001.npz"
+        },
+        "train_fit": {
+          "X_shape": [
+            163,
+            30,
+            92
+          ],
+          "file": "engine_0001.npz"
+        },
+        "validation": {
+          "X_shape": [
+            150,
+            30,
+            92
+          ],
+          "file": "engine_0003.npz"
+        }
+      },
+      "name": "window_array_dimensions",
+      "passed": true
+    }
+  ],
+  "status": "PASS",
+  "subset": "FD001"
+}

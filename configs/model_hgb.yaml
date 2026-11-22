@@ -1,0 +1,30 @@
+# Milestone 5 — HistGradientBoosting configuration (config-driven, CPU-first).
+model:
+  name: hist_gradient_boosting
+  builder: build_gradient_boosting
+  estimator: HistGradientBoostingRegressor
+  feature_set: milestone4_scaled_92
+  target: rul
+  random_seed: 42
+params:
+  learning_rate: 0.06
+  max_iter: 300
+  max_leaf_nodes: 31
+  max_depth: null
+  min_samples_leaf: 20
+  l2_regularization: 0.0
+  random_state: 42
+  early_stopping: false
+training:
+  fit_split: train_fit
+  validation_split: validation
+  record_training_time: true
+artifacts:
+  model_file: artifacts/classical_ml/hist_gradient_boosting/hist_gradient_boosting.joblib
+  metadata_file: artifacts/classical_ml/hist_gradient_boosting/metadata.json
+evaluation:
+  metrics: [mae, rmse, nasa_score, mean_nasa_score]
+notes: >-
+  Early stopping disabled so the fitted model is a deterministic function of the training
+  split only (no internal validation carve-out). Values are reasonable initial baselines,
+  not claimed optima.

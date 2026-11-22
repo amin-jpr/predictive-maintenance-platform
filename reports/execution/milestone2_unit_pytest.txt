@@ -1,0 +1,15 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.16, pytest-8.4.2, pluggy-1.7.0
+rootdir: /home/user/predictive-maintenance-platform
+configfile: pyproject.toml
+testpaths: tests
+plugins: anyio-4.16.0, platformdirs-4.14.5
+collected 19 items / 1 deselected / 18 selected
+
+tests/unit/test_acquisition.py ..                                        [ 11%]
+tests/unit/test_config_io.py ....                                        [ 33%]
+tests/unit/test_loader.py .....                                          [ 61%]
+tests/unit/test_schema.py ..                                             [ 72%]
+tests/unit/test_validation.py .....                                      [100%]
+
+======================= 18 passed, 1 deselected in 1.89s =======================

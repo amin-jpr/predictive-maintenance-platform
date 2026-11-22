@@ -1,0 +1,18 @@
+selected_settings: [setting_1, setting_2]
+selected_sensors: [s_2, s_3, s_4, s_6, s_7, s_8, s_9, s_11, s_12, s_13, s_14, s_15, s_17, s_20, s_21]
+rolling:
+  windows: [5, 10]
+  statistics: [mean, std]
+  min_periods: 1
+  std_ddof: 1
+  apply_to: sensors_only
+differences:
+  orders: [1]
+  apply_to: sensors_only
+optional:
+  rolling_min_max: false
+  min_max_windows: [10]
+  trend_slope: false
+  trend_windows: [10]
+dtype: float32
+feature_count_expected: 92

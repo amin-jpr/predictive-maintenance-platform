@@ -1,0 +1,105 @@
+{
+  "actual_url_host": "data-nasa-bucket-production.s3.us-east-1.amazonaws.com",
+  "attempts": [
+    {
+      "attempt": 1,
+      "error": null,
+      "final_host": "data-nasa-bucket-production.s3.us-east-1.amazonaws.com",
+      "status": 200,
+      "url": "https://data.nasa.gov/docs/legacy/CMAPSSData.zip"
+    }
+  ],
+  "bytes": 12425978,
+  "content_length_header": "12425978",
+  "downloaded_at_utc": "2026-11-07T06:32:12+00:00",
+  "members": [
+    {
+      "compressed": 410724,
+      "crc": "1a016660",
+      "name": "Damage Propagation Modeling.pdf",
+      "size": 434158
+    },
+    {
+      "compressed": 1047,
+      "crc": "9bcc010a",
+      "name": "readme.txt",
+      "size": 2442
+    },
+    {
+      "compressed": 177,
+      "crc": "b31838d4",
+      "name": "RUL_FD001.txt",
+      "size": 429
+    },
+    {
+      "compressed": 418,
+      "crc": "dbd97f6e",
+      "name": "RUL_FD002.txt",
+      "size": 1110
+    },
+    {
+      "compressed": 181,
+      "crc": "89fdfa8b",
+      "name": "RUL_FD003.txt",
+      "size": 428
+    },
+    {
+      "compressed": 406,
+      "crc": "3b7d3c91",
+      "name": "RUL_FD004.txt",
+      "size": 1084
+    },
+    {
+      "compressed": 509855,
+      "crc": "6974e83c",
+      "name": "test_FD001.txt",
+      "size": 2228855
+    },
+    {
+      "compressed": 1581374,
+      "crc": "b7959597",
+      "name": "test_FD002.txt",
+      "size": 5734587
+    },
+    {
+      "compressed": 662242,
+      "crc": "5df88e31",
+      "name": "test_FD003.txt",
+      "size": 2826651
+    },
+    {
+      "compressed": 1940911,
+      "crc": "04c98521",
+      "name": "test_FD004.txt",
+      "size": 6957759
+    },
+    {
+      "compressed": 824584,
+      "crc": "bc18cf28",
+      "name": "train_FD001.txt",
+      "size": 3515356
+    },
+    {
+      "compressed": 2544243,
+      "crc": "65f72997",
+      "name": "train_FD002.txt",
+      "size": 9082480
+    },
+    {
+      "compressed": 1009174,
+      "crc": "a390934e",
+      "name": "train_FD003.txt",
+      "size": 4213862
+    },
+    {
+      "compressed": 2938662,
+      "crc": "3ee014bf",
+      "name": "train_FD004.txt",
+      "size": 10350705
+    }
+  ],
+  "sha256": "74bef434a34db25c7bf72e668ea4cd52afe5f2cf8e44367c55a82bfd91a5a34f",
+  "source_url": "https://data.nasa.gov/docs/legacy/CMAPSSData.zip",
+  "status": 200,
+  "zip_crc_bad_member": null
+}

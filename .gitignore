@@ -1,0 +1,49 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.coverage
+htmlcov/
+build/
+dist/
+
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.yaml
+
+# NASA raw data and generated data products
+# Keep raw and derived datasets local unless redistribution is explicitly permitted.
+data/raw/
+data/interim/
+data/processed/
+
+# Large generated artifact inventory; retain locally for now.
+data/metadata/artifact_manifest.json
+
+# Large temporary/download artifacts
+*.tmp
+*.part
+*.crdownload
+downloads/
+tmp/
+scratch/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Do not accidentally publish packaged delivery archives
+*.zip

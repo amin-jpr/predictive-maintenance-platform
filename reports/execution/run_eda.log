@@ -1,0 +1,5 @@
+EDA complete for FD001
+Figures: 10; tables: 11
+Constant sensors: ['s_1', 's_5', 's_10', 's_16', 's_18', 's_19']
+Near-constant sensors: ['s_6', 's_8', 's_13']
+RUL stats: {'train_raw_min': 0, 'train_raw_max': 361, 'train_raw_mean': 107.80786195530997, 'train_clipped_mean': 86.82928602588338, 'fraction_capped': 0.3892685764141341, 'test_terminal_min': 7, 'test_terminal_max': 145, 'test_terminal_mean': 75.52}

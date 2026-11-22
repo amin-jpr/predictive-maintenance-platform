@@ -1,0 +1,31 @@
+# Milestone 5 — Random Forest configuration (config-driven, CPU-first).
+model:
+  name: random_forest
+  builder: build_random_forest
+  estimator: RandomForestRegressor
+  feature_set: milestone4_scaled_92
+  target: rul
+  random_seed: 42
+params:
+  n_estimators: 100
+  max_depth: null
+  min_samples_split: 2
+  min_samples_leaf: 2
+  max_features: 0.5
+  bootstrap: true
+  random_state: 42
+  n_jobs: -1
+training:
+  fit_split: train_fit
+  validation_split: validation
+  record_training_time: true
+  record_feature_importance: true
+artifacts:
+  model_file: artifacts/classical_ml/random_forest/random_forest.joblib
+  metadata_file: artifacts/classical_ml/random_forest/metadata.json
+evaluation:
+  metrics: [mae, rmse, nasa_score, mean_nasa_score]
+notes: >-
+  Conservative CPU-first settings for 16,779 training rows x 92 features. Values are
+  reasonable initial baselines, not claimed optima; no hyperparameter search is performed
+  in Milestone 5 (that belongs to Milestone 7).

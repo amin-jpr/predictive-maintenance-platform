@@ -1,0 +1,515 @@
+{
+  "checks": [
+    {
+      "details": {
+        "missing": []
+      },
+      "name": "required_files_exist",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "details": {
+        "columns": [
+          "engine_id",
+          "cycle",
+          "setting_1",
+          "setting_2",
+          "setting_3",
+          "s_1",
+          "s_2",
+          "s_3",
+          "s_4",
+          "s_5",
+          "s_6",
+          "s_7",
+          "s_8",
+          "s_9",
+          "s_10",
+          "s_11",
+          "s_12",
+          "s_13",
+          "s_14",
+          "s_15",
+          "s_16",
+          "s_17",
+          "s_18",
+          "s_19",
+          "s_20",
+          "s_21"
+        ]
+      },
+      "name": "train_columns",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "details": {
+        "cycle": "int64",
+        "engine_id": "int64",
+        "s_1": "float64",
+        "s_10": "float64",
+        "s_11": "float64",
+        "s_12": "float64",
+        "s_13": "float64",
+        "s_14": "float64",
+        "s_15": "float64",
+        "s_16": "float64",
+        "s_17": "float64",
+        "s_18": "float64",
+        "s_19": "float64",
+        "s_2": "float64",
+        "s_20": "float64",
+        "s_21": "float64",
+        "s_3": "float64",
+        "s_4": "float64",
+        "s_5": "float64",
+        "s_6": "float64",
+        "s_7": "float64",
+        "s_8": "float64",
+        "s_9": "float64",
+        "setting_1": "float64",
+        "setting_2": "float64",
+        "setting_3": "float64"
+      },
+      "name": "train_dtypes",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "details": {},
+      "name": "train_finite",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "details": {
+        "actual": 100,
+        "expected": 100
+      },
+      "name": "train_engine_count",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "details": {
+        "actual": 20631,
+        "expected": 20631
+      },
+      "name": "train_row_count",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "details": {
+        "duplicate_keys": 0
+      },
+      "name": "train_duplicate_keys",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "details": {
+        "duplicate_rows": 0
+      },
+      "name": "train_duplicate_rows",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "details": {
+        "error_count": 0,
+        "errors": []
+      },
+      "name": "train_cycle_ordering",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "details": {},
+      "name": "train_positive_lengths",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "details": {
+        "columns": [
+          "engine_id",
+          "cycle",
+          "setting_1",
+          "setting_2",
+          "setting_3",
+          "s_1",
+          "s_2",
+          "s_3",
+          "s_4",
+          "s_5",
+          "s_6",
+          "s_7",
+          "s_8",
+          "s_9",
+          "s_10",
+          "s_11",
+          "s_12",
+          "s_13",
+          "s_14",
+          "s_15",
+          "s_16",
+          "s_17",
+          "s_18",
+          "s_19",
+          "s_20",
+          "s_21"
+        ]
+      },
+      "name": "test_columns",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "details": {
+        "cycle": "int64",
+        "engine_id": "int64",
+        "s_1": "float64",
+        "s_10": "float64",
+        "s_11": "float64",
+        "s_12": "float64",
+        "s_13": "float64",
+        "s_14": "float64",
+        "s_15": "float64",
+        "s_16": "float64",
+        "s_17": "float64",
+        "s_18": "float64",
+        "s_19": "float64",
+        "s_2": "float64",
+        "s_20": "float64",
+        "s_21": "float64",
+        "s_3": "float64",
+        "s_4": "float64",
+        "s_5": "float64",
+        "s_6": "float64",
+        "s_7": "float64",
+        "s_8": "float64",
+        "s_9": "float64",
+        "setting_1": "float64",
+        "setting_2": "float64",
+        "setting_3": "float64"
+      },
+      "name": "test_dtypes",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "details": {},
+      "name": "test_finite",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "details": {
+        "actual": 100,
+        "expected": 100
+      },
+      "name": "test_engine_count",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "details": {
+        "actual": 13096,
+        "expected": 13096
+      },
+      "name": "test_row_count",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "details": {
+        "duplicate_keys": 0
+      },
+      "name": "test_duplicate_keys",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "details": {
+        "duplicate_rows": 0
+      },
+      "name": "test_duplicate_rows",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "details": {
+        "error_count": 0,
+        "errors": []
+      },
+      "name": "test_cycle_ordering",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "details": {},
+      "name": "test_positive_lengths",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "details": {
+        "rul_values": 100,
+        "test_engines": 100
+      },
+      "name": "rul_length",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "details": {
+        "max": 145,
+        "min": 7
+      },
+      "name": "rul_nonnegative_integer",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "details": {
+        "note": "RUL file has no engine IDs; aligned to sorted test engine IDs per NASA convention",
+        "test_ids_sorted_contiguous": true
+      },
+      "name": "rul_alignment_convention",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "details": {
+        "note": "Train/test engine IDs are separate namespaces; numeric overlap is expected",
+        "overlap_count": 100
+      },
+      "name": "train_test_numeric_id_overlap_allowed",
+      "passed": true,
+      "severity": "info"
+    },
+    {
+      "details": {
+        "actual": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
+        "expected": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8"
+      },
+      "name": "sha256_train_FD001.txt",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "details": {
+        "actual": "3cda7109ce17bafb5443f2ac926cfcf88154b941b8c4cf95eb55d1ddd6f52851",
+        "expected": "3cda7109ce17bafb5443f2ac926cfcf88154b941b8c4cf95eb55d1ddd6f52851"
+      },
+      "name": "sha256_test_FD001.txt",
+      "passed": true,
+      "severity": "error"
+    },
+    {
+      "details": {
+        "actual": "a19c8ec94931949d0485bdc35118206e9c81c4547b422efb9cf86f4ceddbceca",
+        "expected": "a19c8ec94931949d0485bdc35118206e9c81c4547b422efb9cf86f4ceddbceca"
+      },
+      "name": "sha256_RUL_FD001.txt",
+      "passed": true,
+      "severity": "error"
+    }
+  ],
+  "files": {
+    "rul": {
+      "bytes": 429,
+      "path": "data/raw/cmaps/RUL_FD001.txt",
+      "recorded_at_utc": "2026-11-07T06:40:04+00:00",
+      "role": "raw_rul",
+      "sha256": "a19c8ec94931949d0485bdc35118206e9c81c4547b422efb9cf86f4ceddbceca"
+    },
+    "test": {
+      "bytes": 2228855,
+      "path": "data/raw/cmaps/test_FD001.txt",
+      "recorded_at_utc": "2026-11-07T06:40:04+00:00",
+      "role": "raw_test",
+      "sha256": "3cda7109ce17bafb5443f2ac926cfcf88154b941b8c4cf95eb55d1ddd6f52851"
+    },
+    "train": {
+      "bytes": 3515356,
+      "path": "data/raw/cmaps/train_FD001.txt",
+      "recorded_at_utc": "2026-11-07T06:40:04+00:00",
+      "role": "raw_train",
+      "sha256": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8"
+    }
+  },
+  "generated_at_utc": "2026-11-07T06:40:03+00:00",
+  "rul_summary": {
+    "count": 100,
+    "max": 145,
+    "mean": 75.52,
+    "min": 7,
+    "terminal_test_rul_aligned_to_sorted_engine_ids": true
+  },
+  "sensor_summary": {
+    "constant_sensors": [
+      "s_1",
+      "s_5",
+      "s_10",
+      "s_16",
+      "s_18",
+      "s_19"
+    ],
+    "near_constant_sensors": [
+      "s_6",
+      "s_8",
+      "s_13"
+    ],
+    "statistics": {
+      "s_1": {
+        "max": 518.67,
+        "mean": 518.67,
+        "min": 518.67,
+        "std": 0.0
+      },
+      "s_10": {
+        "max": 1.3,
+        "mean": 1.3,
+        "min": 1.3,
+        "std": 0.0
+      },
+      "s_11": {
+        "max": 48.53,
+        "mean": 47.54116814502448,
+        "min": 46.85,
+        "std": 0.2670873986396848
+      },
+      "s_12": {
+        "max": 523.38,
+        "mean": 521.4134700208424,
+        "min": 518.69,
+        "std": 0.7375533922097114
+      },
+      "s_13": {
+        "max": 2388.56,
+        "mean": 2388.0961523920314,
+        "min": 2387.88,
+        "std": 0.07191891569857814
+      },
+      "s_14": {
+        "max": 8293.72,
+        "mean": 8143.752722117203,
+        "min": 8099.94,
+        "std": 19.076175975953106
+      },
+      "s_15": {
+        "max": 8.5848,
+        "mean": 8.442145581891328,
+        "min": 8.3249,
+        "std": 0.03750503795196652
+      },
+      "s_16": {
+        "max": 0.03,
+        "mean": 0.030000000000000002,
+        "min": 0.03,
+        "std": 3.469531038354711e-18
+      },
+      "s_17": {
+        "max": 400.0,
+        "mean": 393.2106538703892,
+        "min": 388.0,
+        "std": 1.548763024614299
+      },
+      "s_18": {
+        "max": 2388.0,
+        "mean": 2388.0,
+        "min": 2388.0,
+        "std": 0.0
+      },
+      "s_19": {
+        "max": 100.0,
+        "mean": 100.0,
+        "min": 100.0,
+        "std": 0.0
+      },
+      "s_2": {
+        "max": 644.53,
+        "mean": 642.6809335466046,
+        "min": 641.21,
+        "std": 0.5000532700606232
+      },
+      "s_20": {
+        "max": 39.43,
+        "mean": 38.81627066065629,
+        "min": 38.14,
+        "std": 0.18074642787366083
+      },
+      "s_21": {
+        "max": 23.6184,
+        "mean": 23.289705360864716,
+        "min": 22.8942,
+        "std": 0.10825087474491234
+      },
+      "s_3": {
+        "max": 1616.91,
+        "mean": 1590.5231186079202,
+        "min": 1571.04,
+        "std": 6.131149519690819
+      },
+      "s_4": {
+        "max": 1441.49,
+        "mean": 1408.9337816877514,
+        "min": 1382.25,
+        "std": 9.000604780543714
+      },
+      "s_5": {
+        "max": 14.62,
+        "mean": 14.620000000000005,
+        "min": 14.62,
+        "std": 5.329199674912836e-15
+      },
+      "s_6": {
+        "max": 21.61,
+        "mean": 21.609803208763513,
+        "min": 21.6,
+        "std": 0.0013889849127073114
+      },
+      "s_7": {
+        "max": 556.06,
+        "mean": 553.367711211284,
+        "min": 549.85,
+        "std": 0.8850922576634073
+      },
+      "s_8": {
+        "max": 2388.56,
+        "mean": 2388.0966516407348,
+        "min": 2387.9,
+        "std": 0.07098547889092417
+      },
+      "s_9": {
+        "max": 9244.59,
+        "mean": 9065.242940720276,
+        "min": 9021.73,
+        "std": 22.082879525066232
+      }
+    }
+  },
+  "status": "PASS",
+  "subset": "FD001",
+  "test_summary": {
+    "engines": 100,
+    "max_cycle": 303,
+    "max_sequence_length": 303,
+    "mean_sequence_length": 130.96,
+    "min_cycle": 1,
+    "min_sequence_length": 31,
+    "observations": 13096
+  },
+  "train_summary": {
+    "engines": 100,
+    "max_cycle": 362,
+    "max_sequence_length": 362,
+    "mean_sequence_length": 206.31,
+    "min_cycle": 1,
+    "min_sequence_length": 128,
+    "observations": 20631
+  }
+}

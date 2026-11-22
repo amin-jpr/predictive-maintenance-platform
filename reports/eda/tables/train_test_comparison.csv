@@ -1,0 +1,3 @@
+engines,observations,min_cycle,max_cycle,min_length,max_length,mean_length,median_length,std_length,split
+100,20631,1,362,128,362,206.31,199.0,46.3427492067573,train
+100,13096,1,303,31,303,130.96,133.5,53.5934791751852,test

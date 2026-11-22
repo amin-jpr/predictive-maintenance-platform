@@ -1,0 +1,45 @@
+# Milestone 5 — shared experiment configuration (classical ML baselines).
+# All models consume the identical Milestone 4 inputs defined here.
+subset: FD001
+random_seed: 42
+dataset:
+  features_dir: data/processed/scaled
+  labels_dir: data/processed/labels
+  feature_names_file: data/metadata/feature_names.json
+  split_file: data/metadata/split.json
+  train_split: train_fit
+  validation_split: validation
+  # NOTE: the official NASA test split is intentionally absent. It is never loaded,
+  # never used for fitting, feature selection, or model selection in Milestone 5.
+target:
+  column: rul
+  definition: capped remaining useful life in cycles (cap 125, configs/preprocessing.yaml)
+  cap: 125
+feature_set:
+  id: milestone4_scaled_92
+  description: >-
+    92 causal cycle-level features from data/processed/scaled (StandardScaler fit on
+    train_fit engines only in Milestone 4): 2 settings + 15 sensors + 30 rolling means +
+    30 rolling stds + 15 first differences. Identifiers (engine_id, cycle, split) excluded.
+outputs:
+  artifacts_dir: artifacts/classical_ml
+  experiments_dir: experiments/milestone_05
+  run_id: run_001
+  comparison_table: reports/tables/baseline_comparison.csv
+  figures_dir: reports/figures
+  feature_importance_table: reports/tables/random_forest_feature_importance.csv
+  per_engine_table: reports/tables/per_engine_validation_error.csv
+evaluation:
+  metrics: [mae, rmse, nasa_score, mean_nasa_score]
+  diagnostics: [median_absolute_error, error_mean, error_std, early_ratio, late_ratio,
+    within_10_cycles, within_20_cycles]
+  nasa_score:
+    early_denominator: 13
+    late_denominator: 10
+    convention: "d = predicted - actual; d < 0 early, d >= 0 late"
+models:
+  - median_baseline
+  - cycle_trend_baseline
+  - linear_regression
+  - random_forest
+  - hist_gradient_boosting

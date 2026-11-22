@@ -1,0 +1,4 @@
+Feature products complete for FD001
+Features: 92; windows: {'train_fit': 14459, 'validation': 3272, 'test': 10196}
+Scaler fit engines: 80; rows seen: 16779
+Artifacts: 227

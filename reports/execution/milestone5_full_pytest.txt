@@ -1,0 +1,31 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.18, pytest-8.4.2, pluggy-1.7.0
+rootdir: /home/user/predictive-maintenance-platform
+configfile: pyproject.toml
+testpaths: tests
+plugins: platformdirs-4.14.5, anyio-4.16.0
+collected 72 items
+
+tests/integration/test_classical_ml_pipeline.py ..                       [  2%]
+tests/integration/test_real_fd001.py .                                   [  4%]
+tests/integration/test_real_preprocessing.py .                           [  5%]
+tests/integration/test_synthetic_pipeline.py .                           [  6%]
+tests/unit/test_acquisition.py ..                                        [  9%]
+tests/unit/test_baseline.py .......                                      [ 19%]
+tests/unit/test_config_io.py ....                                        [ 25%]
+tests/unit/test_eda.py ..                                                [ 27%]
+tests/unit/test_features.py ...                                          [ 31%]
+tests/unit/test_gradient_boosting.py .....                               [ 38%]
+tests/unit/test_labels.py ...                                            [ 43%]
+tests/unit/test_loader.py .....                                          [ 50%]
+tests/unit/test_metrics.py ...........                                   [ 65%]
+tests/unit/test_model_serialization.py ...                               [ 69%]
+tests/unit/test_no_deep_learning.py .                                    [ 70%]
+tests/unit/test_random_forest.py .....                                   [ 77%]
+tests/unit/test_scaling.py ...                                           [ 81%]
+tests/unit/test_schema.py ..                                             [ 84%]
+tests/unit/test_splitting.py ...                                         [ 88%]
+tests/unit/test_validation.py .....                                      [ 95%]
+tests/unit/test_windows.py ...                                           [100%]
+
+============================== 72 passed in 9.30s ==============================

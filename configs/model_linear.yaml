@@ -1,0 +1,23 @@
+# Milestone 5 — optional interpretable Linear Regression baseline.
+model:
+  name: linear_regression
+  builder: build_linear_regression
+  estimator: LinearRegression
+  feature_set: milestone4_scaled_92
+  target: rul
+  random_seed: 42
+params:
+  fit_intercept: true
+training:
+  fit_split: train_fit
+  validation_split: validation
+  record_training_time: true
+artifacts:
+  model_file: artifacts/classical_ml/linear_regression/linear_regression.joblib
+  metadata_file: artifacts/classical_ml/linear_regression/metadata.json
+evaluation:
+  metrics: [mae, rmse, nasa_score, mean_nasa_score]
+notes: >-
+  Optional high-bias / low-variance reference. Included to contrast a linear model with
+  the nonlinear ensemble models (bias-variance discussion). No regularization is applied;
+  the scaled feature matrix is already standardized.

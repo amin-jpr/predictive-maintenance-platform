@@ -1,0 +1,18 @@
+# Milestone 5 — simple baselines (reference predictors, fit on train_fit only).
+models:
+  median_baseline:
+    builder: build_baseline
+    estimator: DummyRegressor
+    strategy: median
+    description: >-
+      Constant predictor returning the median capped RUL of the training split.
+      Reference performance floor; no input features are used.
+  cycle_trend_baseline:
+    builder: build_cycle_trend_baseline
+    estimator: CycleTrendRegressor
+    description: >-
+      Ordinary least squares of capped RUL on the single input "cycle" (current cycle
+      index, known at prediction time). A true predictive baseline using only
+      current-cycle information; no sensor mapping is invented. See
+      docs/MILESTONE_5_METHODOLOGY.md for definition, assumptions, and limitations.
+    fit_intercept: true

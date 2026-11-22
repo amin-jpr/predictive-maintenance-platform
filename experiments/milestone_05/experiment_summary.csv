@@ -1,0 +1,6 @@
+model_name,mae,rmse,nasa_score,mean_nasa_score,within_10_cycles,training_time_seconds,random_seed,model_artifact,status
+median_baseline,36.809968847352025,46.310478686114564,6909743.208317795,1793.8066480575792,10.903426791277258,0.3441977999173105,42,artifacts\classical_ml\median_baseline\median_baseline.joblib,success
+cycle_trend_baseline,19.466177637340355,25.339719218248003,141350.0027529538,36.69522397532549,38.57736240913811,0.5046505001373589,42,artifacts\classical_ml\cycle_trend_baseline\cycle_trend_baseline.joblib,success
+linear_regression,16.598601842328137,20.588145250584958,38747.568690858796,10.059078060970611,36.11111111111111,0.6346425004303455,42,artifacts\classical_ml\linear_regression\linear_regression.joblib,success
+random_forest,12.332529799978204,18.17604803020685,59424.195021160354,15.426841905804869,56.54205607476636,10.424624899867922,42,artifacts\classical_ml\random_forest\random_forest.joblib,success
+hist_gradient_boosting,12.5497106747702,18.52783090338309,62688.24257197449,16.274206275175104,57.11318795430945,4.795037799980491,42,artifacts\classical_ml\hist_gradient_boosting\hist_gradient_boosting.joblib,success

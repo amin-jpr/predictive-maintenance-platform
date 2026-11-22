@@ -1,0 +1,254 @@
+{
+  "cap": 125,
+  "constant_sensors": [
+    "s_1",
+    "s_5",
+    "s_10",
+    "s_16",
+    "s_18",
+    "s_19"
+  ],
+  "degradation_summary": [
+    {
+      "early_mean": 518.67,
+      "fraction_engines_positive": 0.0,
+      "late_mean": 518.67,
+      "late_minus_early_mean": 0.0,
+      "late_minus_early_std": 0.0,
+      "sensor": "s_1"
+    },
+    {
+      "early_mean": 642.3832166666666,
+      "fraction_engines_positive": 1.0,
+      "late_mean": 643.3825266666666,
+      "late_minus_early_mean": 0.9993100000000072,
+      "late_minus_early_std": 0.20433426024582896,
+      "sensor": "s_2"
+    },
+    {
+      "early_mean": 1586.8984766666667,
+      "fraction_engines_positive": 1.0,
+      "late_mean": 1598.8071433333334,
+      "late_minus_early_mean": 11.908666666666647,
+      "late_minus_early_std": 2.386856348856918,
+      "sensor": "s_3"
+    },
+    {
+      "early_mean": 1402.8310166666672,
+      "fraction_engines_positive": 1.0,
+      "late_mean": 1422.9591133333333,
+      "late_minus_early_mean": 20.128096666666664,
+      "late_minus_early_std": 3.7535481319232273,
+      "sensor": "s_4"
+    },
+    {
+      "early_mean": 14.619999999999997,
+      "fraction_engines_positive": 0.0,
+      "late_mean": 14.619999999999997,
+      "late_minus_early_mean": 0.0,
+      "late_minus_early_std": 0.0,
+      "sensor": "s_5"
+    },
+    {
+      "early_mean": 21.60955333333334,
+      "fraction_engines_positive": 0.47,
+      "late_mean": 21.610000000000014,
+      "late_minus_early_mean": 0.0004466666666682073,
+      "late_minus_early_std": 0.0006687173846382895,
+      "sensor": "s_6"
+    },
+    {
+      "early_mean": 553.9476666666667,
+      "fraction_engines_positive": 0.0,
+      "late_mean": 552.0341399999999,
+      "late_minus_early_mean": -1.9135266666666757,
+      "late_minus_early_std": 0.43716648645556405,
+      "sensor": "s_7"
+    },
+    {
+      "early_mean": 2388.059223333333,
+      "fraction_engines_positive": 1.0,
+      "late_mean": 2388.18952,
+      "late_minus_early_mean": 0.13029666666659978,
+      "late_minus_early_std": 0.05588086363253451,
+      "sensor": "s_8"
+    },
+    {
+      "early_mean": 9056.062076666667,
+      "fraction_engines_positive": 0.71,
+      "late_mean": 9087.593696666665,
+      "late_minus_early_mean": 31.53162000000002,
+      "late_minus_early_std": 39.20994367419862,
+      "sensor": "s_9"
+    },
+    {
+      "early_mean": 1.2999999999999994,
+      "fraction_engines_positive": 0.0,
+      "late_mean": 1.2999999999999994,
+      "late_minus_early_mean": 0.0,
+      "late_minus_early_std": 0.0,
+      "sensor": "s_10"
+    },
+    {
+      "early_mean": 47.35607666666667,
+      "fraction_engines_positive": 1.0,
+      "late_mean": 47.96933333333333,
+      "late_minus_early_mean": 0.6132566666666669,
+      "late_minus_early_std": 0.12597326471565284,
+      "sensor": "s_11"
+    },
+    {
+      "early_mean": 521.9048533333332,
+      "fraction_engines_positive": 0.0,
+      "late_mean": 520.2776633333333,
+      "late_minus_early_mean": -1.6271899999999995,
+      "late_minus_early_std": 0.3805723118186685,
+      "sensor": "s_12"
+    },
+    {
+      "early_mean": 2388.05674,
+      "fraction_engines_positive": 1.0,
+      "late_mean": 2388.1897166666663,
+      "late_minus_early_mean": 0.13297666666660463,
+      "late_minus_early_std": 0.056553189111394536,
+      "sensor": "s_13"
+    },
+    {
+      "early_mean": 8137.384073333334,
+      "fraction_engines_positive": 0.58,
+      "late_mean": 8159.4401,
+      "late_minus_early_mean": 22.05602666666664,
+      "late_minus_early_std": 35.33270882062521,
+      "sensor": "s_14"
+    },
+    {
+      "early_mean": 8.418381833333333,
+      "fraction_engines_positive": 1.0,
+      "late_mean": 8.4980766,
+      "late_minus_early_mean": 0.07969476666666674,
+      "late_minus_early_std": 0.014809012379096164,
+      "sensor": "s_15"
+    },
+    {
+      "early_mean": 0.03,
+      "fraction_engines_positive": 0.0,
+      "late_mean": 0.03,
+      "late_minus_early_mean": 0.0,
+      "late_minus_early_std": 0.0,
+      "sensor": "s_16"
+    },
+    {
+      "early_mean": 392.27,
+      "fraction_engines_positive": 1.0,
+      "late_mean": 395.38599999999997,
+      "late_minus_early_mean": 3.1159999999999983,
+      "late_minus_early_std": 0.6267060665313132,
+      "sensor": "s_17"
+    },
+    {
+      "early_mean": 2388.0,
+      "fraction_engines_positive": 0.0,
+      "late_mean": 2388.0,
+      "late_minus_early_mean": 0.0,
+      "late_minus_early_std": 0.0,
+      "sensor": "s_18"
+    },
+    {
+      "early_mean": 100.0,
+      "fraction_engines_positive": 0.0,
+      "late_mean": 100.0,
+      "late_minus_early_mean": 0.0,
+      "late_minus_early_std": 0.0,
+      "sensor": "s_19"
+    },
+    {
+      "early_mean": 38.93225,
+      "fraction_engines_positive": 0.0,
+      "late_mean": 38.55524333333333,
+      "late_minus_early_mean": -0.377006666666666,
+      "late_minus_early_std": 0.07252243710243839,
+      "sensor": "s_20"
+    },
+    {
+      "early_mean": 23.359172100000002,
+      "fraction_engines_positive": 0.0,
+      "late_mean": 23.131159166666666,
+      "late_minus_early_mean": -0.2280129333333332,
+      "late_minus_early_std": 0.04270869387488117,
+      "sensor": "s_21"
+    }
+  ],
+  "figures": [
+    "figures/engine_lifetime_histogram.png",
+    "figures/sequence_length_distribution.png",
+    "figures/sensor_distributions.png",
+    "figures/sensor_correlation_heatmap.png",
+    "figures/degradation_trajectories.png",
+    "figures/degradation_summary.png",
+    "figures/rul_distribution.png",
+    "figures/rul_clipping_effect.png",
+    "figures/train_test_comparison.png",
+    "figures/setting_relationships.png"
+  ],
+  "generated_at_utc": "2026-11-07T06:43:10+00:00",
+  "near_constant_sensors": [
+    "s_6",
+    "s_8",
+    "s_13"
+  ],
+  "overview": {
+    "n_columns": 26,
+    "n_sensors": 21,
+    "n_settings": 3,
+    "rul_vector_length": 100,
+    "test": {
+      "engines": 100,
+      "max_cycle": 303,
+      "max_length": 303,
+      "mean_length": 130.96,
+      "median_length": 133.5,
+      "min_cycle": 1,
+      "min_length": 31,
+      "observations": 13096,
+      "std_length": 53.5934791751852
+    },
+    "test_information": "Right-censored sequences; separate terminal RUL vector; final observed cycle is not failure.",
+    "train": {
+      "engines": 100,
+      "max_cycle": 362,
+      "max_length": 362,
+      "mean_length": 206.31,
+      "median_length": 199.0,
+      "min_cycle": 1,
+      "min_length": 128,
+      "observations": 20631,
+      "std_length": 46.3427492067573
+    },
+    "train_information": "Run-to-failure sequences; final observed cycle is benchmark failure endpoint."
+  },
+  "rul_stats": {
+    "fraction_capped": 0.3892685764141341,
+    "test_terminal_max": 145,
+    "test_terminal_mean": 75.52,
+    "test_terminal_min": 7,
+    "train_clipped_mean": 86.82928602588338,
+    "train_raw_max": 361,
+    "train_raw_mean": 107.80786195530997,
+    "train_raw_min": 0
+  },
+  "sensor_statistics_file": "tables/sensor_statistics.csv",
+  "subset": "FD001",
+  "tables": [
+    "tables/constant_sensors.csv",
+    "tables/correlation_matrix.csv",
+    "tables/degradation_per_engine.csv",
+    "tables/degradation_summary.csv",
+    "tables/engine_lengths.csv",
+    "tables/engine_lifetimes.csv",
+    "tables/sensor_statistics.csv",
+    "tables/setting_statistics.csv",
+    "tables/test_terminal_rul.csv",
+    "tables/train_rul_descriptive.csv",
+    "tables/train_test_comparison.csv"
+  ]
+}

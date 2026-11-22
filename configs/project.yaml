@@ -1,0 +1,39 @@
+project:
+  name: predictive-maintenance-platform
+  title: Predictive Maintenance & Remaining Useful Life Prediction System
+  version: 1.0.0
+  milestone_boundary: 5
+  classical_ml_training: true
+  deep_learning_training: false
+  timezone: Asia/Tehran
+  cpu_only: true
+  target_ram_gb: 8
+python:
+  minimum: '3.11'
+  maximum_exclusive: '3.14'
+dataset:
+  initial_subset: FD001
+  raw_dir: data/raw/cmaps
+  archive_dir: data/raw/archives
+  metadata_dir: data/metadata
+  interim_dir: data/interim
+  processed_dir: data/processed
+  reports_dir: reports
+milestones:
+  - id: 0
+    name: Project definition and technical planning
+  - id: 1
+    name: Repository and development environment
+  - id: 2
+    name: Dataset acquisition and validation
+  - id: 3
+    name: Exploratory data analysis
+  - id: 4
+    name: Data processing and feature engineering
+  - id: 5
+    name: Classical machine learning baselines
+paths:
+  specification: PROJECT_SPEC.md
+  decisions: docs/TECHNICAL_DECISIONS.md
+  contracts: docs/DATA_CONTRACTS.md
+  progress: docs/IMPLEMENTATION_PROGRESS.md

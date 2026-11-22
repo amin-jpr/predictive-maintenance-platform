@@ -1,0 +1,38 @@
+subset: FD001
+rul:
+  cap: 125
+split:
+  method: engine_shuffle
+  seed: 42
+  validation_fraction: 0.20
+sensor_selection:
+  policy: explicit_after_eda
+  excluded_sensors: [s_1, s_5, s_10, s_16, s_18, s_19]
+  excluded_settings: [setting_3]
+  retained_near_constant_sensors: [s_6, s_8, s_13]
+  rationale: >-
+    FD001 EDA verified six exact constant sensors; they are excluded from features only.
+    Near-constant but nonzero-variance sensors are retained initially. setting_3 is constant.
+scaling:
+  method: standard
+  fit_split: train_fit
+  with_mean: true
+  with_std: true
+  conditional_on_regime: false
+  rationale: FD001 has one operating condition; global StandardScaler is the initial leakage-safe choice.
+windows:
+  length: 30
+  stride: 1
+  padding: none
+  drop_incomplete: true
+  dtype: float32
+warmup:
+  rolling_min_periods: 1
+  initial_std: 0.0
+  initial_difference: 0.0
+  decision: TD-024
+paths:
+  interim_dir: data/interim
+  processed_dir: data/processed
+  metadata_dir: data/metadata
+  report_dir: reports/preprocessing

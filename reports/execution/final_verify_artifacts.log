@@ -1,0 +1,9 @@
+Artifact verification PASS
+  artifact_checksums: PASS
+  split_isolation: PASS
+  train_labels_independent: PASS
+  test_labels_independent: PASS
+  scaler_fit_boundary: PASS
+  window_boundaries: PASS
+  window_targets_match_ending_cycle: PASS
+  window_array_dimensions: PASS

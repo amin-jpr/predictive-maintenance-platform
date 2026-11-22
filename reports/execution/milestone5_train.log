@@ -1,0 +1,10 @@
+Loaded Milestone 4 inputs: train (16779, 92), validation (3852, 92), features 92
+Train engines: 80; validation engines: 20; official test used: False
+median_baseline: MAE=36.810 RMSE=46.310 NASA=6909743.2 (mean 1793.8066) train_time=0.01s
+cycle_trend_baseline: MAE=19.466 RMSE=25.340 NASA=141350.0 (mean 36.6952) train_time=0.00s
+linear_regression: MAE=16.599 RMSE=20.588 NASA=38747.6 (mean 10.0591) train_time=0.07s
+random_forest: MAE=12.333 RMSE=18.176 NASA=59424.2 (mean 15.4268) train_time=20.86s
+hist_gradient_boosting: MAE=12.550 RMSE=18.528 NASA=62688.2 (mean 16.2742) train_time=4.32s
+Comparison table: /home/user/predictive-maintenance-platform/reports/tables/baseline_comparison.csv
+Experiment records: /home/user/predictive-maintenance-platform/experiments/milestone_05/run_001
+Artifacts: /home/user/predictive-maintenance-platform/artifacts/classical_ml

@@ -1,0 +1,87 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "predictive-maintenance-platform"
+version = "1.0.0"
+description = "Leakage-controlled data preparation and classical ML baselines for NASA C-MAPSS RUL prognostics (Milestones 0-5; deep learning excluded until Milestone 6)."
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+license = { text = "MIT" }
+authors = [{ name = "Predictive Maintenance Platform contributors" }]
+dependencies = [
+  "numpy>=2.1,<3",
+  "pandas>=2.2,<3",
+  "matplotlib>=3.9,<4",
+  "seaborn>=0.13,<1",
+  "scikit-learn>=1.6,<2",
+  "PyYAML>=6.0,<7",
+  "pyarrow>=18,<24",
+  "requests>=2.32,<3",
+]
+
+[dependency-groups]
+dev = [
+  "pytest>=8.3,<9",
+  "ruff>=0.9,<1",
+  "mypy>=1.15,<2",
+  "nbformat>=5.10,<6",
+  "nbclient>=0.10,<3",
+  "jupyterlab>=4.3,<5",
+  "ipykernel>=6.29,<7",
+  "reportlab>=4.2,<5",
+  "types-PyYAML>=6.0",
+  "types-requests>=2.32",
+  "pandas-stubs>=2.2",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/predictive_maintenance"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests", "scripts"]
+# notebooks/ are executed Milestone 3 deliverables verified via nbclient (0 cell errors);
+# they are intentionally not linted/formatted so their recorded outputs stay untouched.
+extend-exclude = [".venv", "data", "reports", "notebooks"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "C4"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"src/predictive_maintenance/analysis/eda.py" = ["E402"]
+"src/predictive_maintenance/evaluation/figures.py" = ["E402"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra --strict-markers"
+markers = [
+  "data_required: requires the verified NASA FD001 raw files",
+  "integration: end-to-end or multi-module checks",
+]
+
+[tool.mypy]
+# Type-check against the tested 3.13 interpreter; NumPy 2.5 stubs use 3.12+ syntax.
+# Runtime support remains >=3.11,<3.14 and is exercised by the CI test matrix.
+python_version = "3.13"
+files = ["src/predictive_maintenance"]
+mypy_path = "src"
+check_untyped_defs = true
+disallow_untyped_defs = true
+no_implicit_optional = true
+warn_return_any = true
+warn_unused_ignores = false
+pretty = true
+
+[[tool.mypy.overrides]]
+module = ["matplotlib.*", "seaborn.*", "sklearn.*", "reportlab.*", "nbformat.*", "nbclient.*", "joblib"]
+ignore_missing_imports = true

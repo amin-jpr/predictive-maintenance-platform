@@ -1,0 +1,233 @@
+{
+  "cap": 125,
+  "config_fingerprints": {
+    "dataset": "279eee4d82d0b01e59693baa89ffd130a43ecfaacce5f7d119d90c178cb3f6f8",
+    "features": "283cdd5ca62cc924b10641f399ebf72d047dd2a48545d9560d3d054bc412d12b",
+    "preprocessing": "a9bb71f967e4b1feb295700483300a1e7b896e0ca31fe53862ce768ddf3eb71f"
+  },
+  "counts": {
+    "test": {
+      "engines": 100,
+      "rows": 13096
+    },
+    "train_fit": {
+      "engines": 80,
+      "rows": 16779
+    },
+    "validation": {
+      "engines": 20,
+      "rows": 3852
+    }
+  },
+  "feature_config": {
+    "differences": {
+      "apply_to": "sensors_only",
+      "orders": [
+        1
+      ]
+    },
+    "dtype": "float32",
+    "feature_count_expected": 92,
+    "optional": {
+      "min_max_windows": [
+        10
+      ],
+      "rolling_min_max": false,
+      "trend_slope": false,
+      "trend_windows": [
+        10
+      ]
+    },
+    "rolling": {
+      "apply_to": "sensors_only",
+      "min_periods": 1,
+      "statistics": [
+        "mean",
+        "std"
+      ],
+      "std_ddof": 1,
+      "windows": [
+        5,
+        10
+      ]
+    },
+    "selected_sensors": [
+      "s_2",
+      "s_3",
+      "s_4",
+      "s_6",
+      "s_7",
+      "s_8",
+      "s_9",
+      "s_11",
+      "s_12",
+      "s_13",
+      "s_14",
+      "s_15",
+      "s_17",
+      "s_20",
+      "s_21"
+    ],
+    "selected_settings": [
+      "setting_1",
+      "setting_2"
+    ]
+  },
+  "generated_at_utc": "2026-11-07T06:55:08+00:00",
+  "n_features": 92,
+  "no_predictive_model_trained": true,
+  "preprocessing_config": {
+    "paths": {
+      "interim_dir": "data/interim",
+      "metadata_dir": "data/metadata",
+      "processed_dir": "data/processed",
+      "report_dir": "reports/preprocessing"
+    },
+    "rul": {
+      "cap": 125
+    },
+    "scaling": {
+      "conditional_on_regime": false,
+      "fit_split": "train_fit",
+      "method": "standard",
+      "rationale": "FD001 has one operating condition; global StandardScaler is the initial leakage-safe choice.",
+      "with_mean": true,
+      "with_std": true
+    },
+    "sensor_selection": {
+      "excluded_sensors": [
+        "s_1",
+        "s_5",
+        "s_10",
+        "s_16",
+        "s_18",
+        "s_19"
+      ],
+      "excluded_settings": [
+        "setting_3"
+      ],
+      "policy": "explicit_after_eda",
+      "rationale": "FD001 EDA verified six exact constant sensors; they are excluded from features only. Near-constant but nonzero-variance sensors are retained initially. setting_3 is constant.",
+      "retained_near_constant_sensors": [
+        "s_6",
+        "s_8",
+        "s_13"
+      ]
+    },
+    "split": {
+      "method": "engine_shuffle",
+      "seed": 42,
+      "validation_fraction": 0.2
+    },
+    "subset": "FD001",
+    "warmup": {
+      "decision": "TD-024",
+      "initial_difference": 0.0,
+      "initial_std": 0.0,
+      "rolling_min_periods": 1
+    },
+    "windows": {
+      "drop_incomplete": true,
+      "dtype": "float32",
+      "length": 30,
+      "padding": "none",
+      "stride": 1
+    }
+  },
+  "scaler_fit_engines": [
+    1,
+    2,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    20,
+    21,
+    23,
+    24,
+    27,
+    29,
+    30,
+    31,
+    32,
+    33,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    54,
+    55,
+    56,
+    58,
+    59,
+    61,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    94,
+    95,
+    96,
+    97,
+    99
+  ],
+  "source_file_sha256": {
+    "Damage Propagation Modeling.pdf": "e7aaef80c177333f400a4c1099fe76e67d244569b9397c937ec4cd3ed5b44a27",
+    "RUL_FD001.txt": "a19c8ec94931949d0485bdc35118206e9c81c4547b422efb9cf86f4ceddbceca",
+    "readme.txt": "4f5270554b775c67e73aff383c5436fd329d6e4cc3d3a116913276fae511269b",
+    "test_FD001.txt": "3cda7109ce17bafb5443f2ac926cfcf88154b941b8c4cf95eb55d1ddd6f52851",
+    "train_FD001.txt": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8"
+  },
+  "stage": "feature_products",
+  "subset": "FD001",
+  "window_counts": {
+    "test": 10196,
+    "train_fit": 14459,
+    "validation": 3272
+  }
+}

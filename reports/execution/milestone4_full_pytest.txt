@@ -1,0 +1,25 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.16, pytest-8.4.2, pluggy-1.7.0
+rootdir: /home/user/predictive-maintenance-platform
+configfile: pyproject.toml
+testpaths: tests
+plugins: anyio-4.16.0, platformdirs-4.14.5
+collected 39 items
+
+tests/integration/test_real_fd001.py .                                   [  2%]
+tests/integration/test_real_preprocessing.py .                           [  5%]
+tests/integration/test_synthetic_pipeline.py .                           [  7%]
+tests/unit/test_acquisition.py ..                                        [ 12%]
+tests/unit/test_config_io.py ....                                        [ 23%]
+tests/unit/test_eda.py ..                                                [ 28%]
+tests/unit/test_features.py ...                                          [ 35%]
+tests/unit/test_labels.py ...                                            [ 43%]
+tests/unit/test_loader.py .....                                          [ 56%]
+tests/unit/test_no_training.py .                                         [ 58%]
+tests/unit/test_scaling.py ...                                           [ 66%]
+tests/unit/test_schema.py ..                                             [ 71%]
+tests/unit/test_splitting.py ...                                         [ 79%]
+tests/unit/test_validation.py .....                                      [ 92%]
+tests/unit/test_windows.py ...                                           [100%]
+
+============================== 39 passed in 7.37s ==============================

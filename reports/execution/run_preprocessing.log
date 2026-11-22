@@ -1,0 +1,4 @@
+Cycle-level preparation complete for FD001
+RUL cap: 125
+Split: 80 fit / 20 validation
+Counts: {'train_fit': {'rows': 16779, 'engines': 80}, 'validation': {'rows': 3852, 'engines': 20}, 'test': {'rows': 13096, 'engines': 100}}

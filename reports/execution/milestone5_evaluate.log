@@ -1,0 +1,9 @@
+median_baseline: verified MAE=36.810 RMSE=46.310
+cycle_trend_baseline: verified MAE=19.466 RMSE=25.340
+linear_regression: verified MAE=16.599 RMSE=20.588
+random_forest: verified MAE=12.333 RMSE=18.176
+hist_gradient_boosting: verified MAE=12.550 RMSE=18.528
+Best validation model by MAE: random_forest
+Figures written to /home/user/predictive-maintenance-platform/reports/figures
+Comparison table: /home/user/predictive-maintenance-platform/reports/tables/baseline_comparison.csv
+Evaluation verification: PASS (metrics reproduced, artifacts reload and match)
